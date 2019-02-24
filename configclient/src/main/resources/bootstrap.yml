@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      discovery:
+        service-id: config-server
+        enabled: true
+      name: spring-cloud-config
+      backup:
+        enable: true
+        fallbackLocation: d:\\sts3\\stsworkspace\configbackup\\fallback.properties
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
